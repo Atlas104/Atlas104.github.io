@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Coming Soon | Creative Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #101e2a;
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 25px;
+            text-align: center;
+            background-color: #0b1620;
+        }
+
+        header h2 {
+            color: #a6d8b3;
+            font-size: 22px;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(5, 15, 20, 0.55),
+                    rgba(5, 15, 20, 0.85)
+                ),
+                url("images/forest.jpg");
+
+            background-position: center;
+            background-size: cover;
+        }
+
+        .content {
+            max-width: 800px;
+        }
+
+        .subtitle {
+            color: #a6d8b3;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 64px);
+            margin-bottom: 25px;
+        }
+
+        .description {
+            font-size: 19px;
+            line-height: 1.7;
+            color: #e2e8f0;
+            margin-bottom: 35px;
+        }
+
+        .launch-message {
+            display: inline-block;
+            padding: 15px 30px;
+            border: 2px solid #a6d8b3;
+            border-radius: 30px;
+            color: #a6d8b3;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #0b1620;
+            padding: 20px;
+            text-align: center;
+            color: #aab5c0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .description {
+                font-size: 16px;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Creative Portfolio</h2>
+    </header>
+
+    <main class="hero">
+        <div class="content">
+
+            <p class="subtitle">
+                Digital Multimedia Design Portfolio
+            </p>
+
+            <h1>
+                Something Creative Is Coming Soon.
+            </h1>
+
+            <p class="description">
+                Welcome to my soon to be creative portfolio!
+		I am currently making a collection of 
+		projects that are focused on video editing,
+		UX/UI, web design, and digital experiences. 
+                Stay tuned to look at my creative journey and
+		my work.
+            </p>
+
+            <div class="launch-message">
+                Portfolio Launching Soon
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Creative Portfolio.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
