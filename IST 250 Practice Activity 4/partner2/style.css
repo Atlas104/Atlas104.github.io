@@ -1,0 +1,243 @@
+/* General Page Styling */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf2ff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main Container */
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+
+/* Header */
+
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+/* Dashboard Cards */
+
+.dashboard-card {
+    background-color: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Headings */
+
+h2 {
+    color: #1e40af;
+    margin-top: 0;
+}
+
+
+/* Greeting */
+
+#greeting {
+    font-size: 28px;
+    color: #2563eb;
+}
+
+
+/* Motivational Message */
+
+#studyMessage {
+    font-size: 18px;
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-left: 5px solid #2563eb;
+    border-radius: 5px;
+}
+
+
+/* Form Layout */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+/* Textboxes and Dropdown */
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Button Hover Effect */
+
+button:hover {
+    background-color: #1e40af;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: #666666;
+}
+
+
+/* Mobile Layout */
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .dashboard-card {
+        padding: 15px;
+    }
+
+}
+
+
+/* ---------- Chase's Additions ---------- */
+
+/* Smooth background color change when the theme is updated */
+
+body {
+    transition: background-color 0.4s ease;
+}
+
+
+/* Focus Highlight for Textboxes and Dropdown */
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Button Press Effect */
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+/* To-Do List Input Row */
+
+.todo-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-row button {
+    white-space: nowrap;
+}
+
+
+/* To-Do Ordered List */
+
+#todoList {
+    margin: 0;
+    padding-left: 25px;
+}
+
+#todoList li {
+    background-color: #f1f5f9;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #2563eb;
+    border-radius: 5px;
+    display: list-item;
+}
+
+#todoList li span {
+    display: inline-block;
+    max-width: 75%;
+    word-break: break-word;
+    vertical-align: middle;
+}
+
+
+/* Remove Button */
+
+.remove-button {
+    float: right;
+    background-color: #dc2626;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.remove-button:hover {
+    background-color: #991b1b;
+}
+
+
+/* Mobile Layout for To-Do Row */
+
+@media (max-width: 600px) {
+
+    .todo-row {
+        flex-direction: column;
+    }
+
+}

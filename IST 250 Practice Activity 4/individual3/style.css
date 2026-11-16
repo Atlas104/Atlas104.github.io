@@ -1,0 +1,330 @@
+/* General Website Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8ed;
+    color: #333333;
+}
+
+/* Header */
+
+header {
+    background-color: #9e2424;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Menu Section */
+
+.menu {
+    padding: 30px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 30px;
+    color: #9e2424;
+    margin-bottom: 30px;
+}
+
+/* Desktop Pizza Gallery */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    background-color: white;
+    border: 2px solid #e0d5c5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hide descriptions on desktop */
+
+.pizza-info {
+    display: none;
+}
+
+/* Directions are hidden on desktop */
+
+.directions {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: #292929;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+footer h3 {
+    color: #ffb347;
+}
+
+.footer-location,
+.footer-contact {
+    max-width: 400px;
+}
+
+/* ----------------------------------
+   Tablet Layout
+   601px - 1024px
+---------------------------------- */
+
+@media screen and (min-width: 601px)
+and (max-width: 1024px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-item {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .menu-item img {
+        width: 180px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    .pizza-info {
+        display: block;
+    }
+
+    .pizza-info h3 {
+        color: #9e2424;
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    .pizza-info p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .price {
+        color: #b34b19;
+        font-weight: bold;
+    }
+
+    /* Hide location details in footer */
+
+    .footer-location {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .directions {
+        display: none;
+    }
+}
+
+/* ----------------------------------
+   Phone Layout
+   600px and below
+---------------------------------- */
+
+@media screen and (max-width: 600px) {
+
+    /* Hide restaurant header */
+
+    header {
+        display: none;
+    }
+
+    /* Hide pizza gallery */
+
+    .menu {
+        display: none;
+    }
+
+    /* Show directions */
+
+    .directions {
+        display: block;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .directions h2 {
+        font-size: 26px;
+        color: #9e2424;
+    }
+
+    .directions h3 {
+        font-size: 22px;
+        color: #9e2424;
+    }
+
+    .directions p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .directions img {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+        border: 3px solid #9e2424;
+        border-radius: 8px;
+    }
+
+    /* Hide footer completely */
+
+    footer {
+        display: none;
+    }
+}
+
+
+/* Pizza Image Popup */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Show the popup */
+
+.modal.active {
+    display: flex;
+}
+
+/* Blur page behind the popup */
+
+body.modal-open header,
+body.modal-open main,
+body.modal-open footer {
+    filter: blur(6px);
+}
+
+/* Centered popup */
+
+.modal-content {
+    position: relative;
+    background-color: #fff8ed;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 650px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Enlarged pizza image */
+
+#modal-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Pizza title */
+
+#modal-title {
+    color: #9e2424;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* Pizza description */
+
+#modal-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Close button */
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #9e2424;
+    cursor: pointer;
+}
+
+/* Show clickable images on desktop only */
+
+@media screen and (min-width: 1025px) {
+    .menu-item img {
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .menu-item img:hover {
+        transform: scale(1.03);
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personal Study Dashboard</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body><div id="portfolio-return-bar" style="position:relative;z-index:2147483647;box-sizing:border-box;background:#10223b;color:#fff;padding:11px 18px;text-align:left;font:600 14px/1.4 Arial,sans-serif;border-bottom:2px solid #66c6d3;"><a href="../index.html" style="color:#fff;text-decoration:none;display:inline-block;">← Back to Web Development Portfolio</a></div>
+<div class="container">
+<!-- Website Header -->
+<header>
+<h1>Personal Study Dashboard</h1>
+<p>Stay focused, organized, and motivated on your studies!</p>
+</header>
+<!-- Personalized Greeting -->
+<section class="dashboard-card">
+<h2 id="greeting">Welcome, Student!</h2>
+<p id="studyMessage">
+                One assignment at a time to reach your goals!
+            </p>
+</section>
+<!-- Dashboard Customization -->
+<section class="dashboard-card">
+<h2>Customize Your Dashboard</h2>
+<p>
+                Enter your name and make your own motivational message.
+            </p>
+<div class="form-group">
+<label for="studentName">Your Name:</label>
+<input id="studentName" placeholder="Enter your name" type="text"/>
+</div>
+<div class="form-group">
+<label for="customMessage">Motivational Message:</label>
+<input id="customMessage" placeholder="Enter your study message" type="text"/>
+</div>
+<!-- Chase, you will need to implement the Theme Selector -->
+<div class="form-group">
+<label for="themeColor">Choose Background Theme:</label>
+<select id="themeColor">
+<option value="#eaf2ff">Light Blue</option>
+<option value="#e8f5e9">Light Green</option>
+<option value="#fff3e0">Light Orange</option>
+<option value="#f3e5f5">Light Purple</option>
+<option value="#f5f5f5">Light Gray</option>
+</select>
+</div>
+<button id="updateButton">
+                Update Dashboard
+            </button>
+</section>
+<!-- Study To-Do List -->
+<!-- Chase, add the HTML and JavaScript for this section -->
+<section class="dashboard-card">
+<h2>Study To-Do List</h2>
+<p>
+                Keep track of assignments, projects, and upcoming tasks.
+            </p>
+<div id="todoSection">
+<label for="todoInput">New Task:</label>
+<div class="todo-row">
+<input id="todoInput" placeholder="Enter a study task" type="text"/>
+<button id="addTodoButton">
+                        Add Task
+                    </button>
+</div>
+<ol id="todoList"></ol>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<p>Personal Study Dashboard | Partner Lab 2</p>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

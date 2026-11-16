@@ -1,0 +1,65 @@
+/* Overall page styling */
+body {
+    background-color: #f0f4ff;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+/* Multiple selectors using one style */
+h1, h2 {
+    color: #263d8f;
+}
+
+/* Main heading */
+h1 {
+    border: 3px solid #263d8f;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Images */
+img {
+    border: 4px solid #333333;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Lists */
+ul, ol {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ID selector */
+#special-item {
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: #263d8f;
+    font-weight: bold;
+}
+
+/* Bonus: change link appearance when the mouse is over it */
+a:hover {
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* Bonus: styled footer */
+footer {
+    border-top: 2px solid #263d8f;
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
